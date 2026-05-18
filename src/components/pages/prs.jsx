@@ -1,7 +1,7 @@
 import { useState } from "react";
 import imsecond1 from "../../assets/SPK.jpeg";
 import imsecond2 from "../../assets/GroupA.jpeg";
-import imsecond3  from "../../assets/interview.jpeg";
+import imsecond3  from "../../assets/Interview.jpeg";
 import {
   Users,
   GraduationCap,

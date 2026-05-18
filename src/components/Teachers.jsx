@@ -1,25 +1,34 @@
+import { useState,useEffect } from "react";
+import { useSelector,useDispatch } from "react-redux";
+import { Link } from "react-router-dom";
+
 const teachers = [
   {
     name: "Mrs. Sarah Johnson",
     role: "Science Teacher",
+    position:"Headmaster",
     image:
       "https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=1200&auto=format&fit=crop",
   },
   {
     name: "Mr. David Wilson",
     role: "Mathematics Teacher",
+    position:"Principal Junior School",
     image:
       "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=1200&auto=format&fit=crop",
   },
   {
     name: "Mrs. Grace Michael",
     role: "English Teacher",
+    position:"principal Senior School",
     image:
       "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?q=80&w=1200&auto=format&fit=crop",
   },
 ];
 
 function Teachers() {
+  const disp=useDispatch();
+
   return (
     <section className="py-28 bg-white">
       <div className="max-w-7xl mx-auto px-5 lg:px-10">
@@ -45,7 +54,8 @@ function Teachers() {
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-10">
 
           {teachers.map((teacher, index) => (
-            <div
+            <Link
+            to={`/SchoolProfile/${teacher?.position}`}
               key={index}
               className="
                 group
@@ -84,6 +94,10 @@ function Teachers() {
                   {teacher.role}
                 </p>
 
+                <p className="mt-2 text-gray-500">
+                  {teacher.position}
+                </p>
+
                 <button
                   className="
                     mt-7
@@ -100,7 +114,7 @@ function Teachers() {
                   View Profile
                 </button>
               </div>
-            </div>
+            </Link>
           ))}
         </div>
       </div>

@@ -1,4 +1,6 @@
 @import "tailwindcss";
-@tailwind base;
-@tailwind components;
 @tailwind utilities;
+
+.active{
+  color: rgba(29, 139, 243, 0.8);
+}

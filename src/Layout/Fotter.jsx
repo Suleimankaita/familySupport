@@ -55,11 +55,11 @@ function Footer() {
 
             <div className="mt-7 flex flex-col gap-5 text-sky-100">
 
-              <a href="/">Home</a>
-              <a href="/about">About Us</a>
-              <a href="/programs">Programs</a>
-              <a href="/admissions">Admissions</a>
-              <a href="/contact">Contact</a>
+              <a href="/" className="hover:text-[#ff6347] transition-colors">Home</a>
+              <a href="/About" className="hover:text-[#ff6347] transition-colors">About Us</a>
+              <a href="/Programs" className="hover:text-[#ff6347] transition-colors">Programs</a>
+              <a href="/Admissions" className="hover:text-[#ff6347] transition-colors">Admissions</a>
+              <a href="/Contact" className="hover:text-[#ff6347] transition-colors">Contact</a>
 
             </div>
           </div>
@@ -73,11 +73,11 @@ function Footer() {
 
             <div className="mt-7 flex flex-col gap-5 text-sky-100">
 
-              <p>Nursery School</p>
-              <p>Primary School</p>
-              <p>Secondary School</p>
-              <p>ICT Training</p>
-              <p>Sports Activities</p>
+              <a href="/Nursery" className="hover:text-[#ff6347] transition-colors">Nursery School</a>
+              <a href="/Primary" className="hover:text-[#ff6347] transition-colors">Primary School</a>
+              <a href="/Secondary" className="hover:text-[#ff6347] transition-colors">Secondary School</a>
+              <a href="/ICTTraining" className="hover:text-[#ff6347] transition-colors">ICT Training</a>
+              <a href="/Sports" className="hover:text-[#ff6347] transition-colors">Sports Activities</a>
 
             </div>
           </div>

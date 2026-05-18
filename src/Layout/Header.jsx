@@ -1,12 +1,12 @@
 import { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link,NavLink } from "react-router-dom";
 import { Menu, X, GraduationCap } from "lucide-react";
 import Logo from "../assets/family_logo.jpeg";
 const navLinks = [
   { name: "Home", path: "/" },
   { name: "About", path: "/about" },
   { name: "Programs", path: "/programs" },
-  { name: "Admissions", path: "/admissions" },
+  { name: "Admissions", path: "/Admissions" },
   { name: "Contact", path: "/contact" },
 ];
 
@@ -20,7 +20,7 @@ function Header() {
         {/* Logo */}
         <Link
           to="/"
-          className="flex items-center gap-3"
+          className="flex items-center gap-3 "
         >
           <div className="w-12 h-12 rounded-2xl bg-gradient-to-br from-sky-400 to-blue-900 flex items-center justify-center shadow-lg">
             {/* <GraduationCap className="text-white" size={26} /> */}
@@ -41,11 +41,12 @@ function Header() {
         {/* Desktop Nav */}
         <nav className="hidden lg:flex items-center gap-8">
           {navLinks.map((link) => (
-            <Link
+            <NavLink
               key={link.name}
               to={link.path}
               className="
                 relative
+                link
                 text-blue-950
                 font-medium
                 transition
@@ -61,7 +62,7 @@ function Header() {
               "
             >
               {link.name}
-            </Link>
+            </NavLink>
           ))}
 
           {/* CTA */}
@@ -135,7 +136,7 @@ function Header() {
               </Link>
             ))}
 
-            <Link
+            <NavLink
               to="/portal"
               className="
                 mt-3
@@ -151,7 +152,7 @@ function Header() {
               "
             >
               Student Portal
-            </Link>
+            </NavLink>
           </div>
         </div>
       </div>

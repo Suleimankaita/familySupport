@@ -5,11 +5,11 @@ import App from './App.jsx'
 import { Provider } from 'react-redux'
 import { BrowserRouter as Router ,Route,Routes } from 'react-router-dom'
 import ScrollToTop from './components/ScrollToTop.jsx'
-
+import {store} from './features/slices/Store.jsx'
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     
-    {/* <Provider> */}
+    <Provider store={store}>
       <Router>
      <ScrollToTop />
         <Routes>
@@ -17,6 +17,6 @@ createRoot(document.getElementById('root')).render(
         <Route path="/*" element={<App />} />
         </Routes>
       </Router>
-    {/* </Provider> */}
+    </Provider>
   </StrictMode>,
 )

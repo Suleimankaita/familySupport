@@ -7,7 +7,7 @@ import {
   Trophy,
   GraduationCap,
 } from "lucide-react";
-import img from "../assets/landing.jpeg";
+import img from "../assets/Landing.jpeg";
 function Hero() {
   return (
     <section className="relative overflow-hidden bg-gradient-to-br from-sky-50 via-white to-blue-100 pt-36 pb-24">

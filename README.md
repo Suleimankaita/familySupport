@@ -7,10 +7,7 @@ A modern full-stack platform designed to simplify family support, financial assi
 ## 📸 Preview
 
 > Add screenshots of the application here.
-
-| Dashboard | Family Members | Financial Support |
-|-----------|----------------|-------------------|
-| ![](screenshots/dashboard.png) | ![](screenshots/family.png) | ![](screenshots/support.png) |
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/8680d1ad-dbc8-4fcc-beb8-e3407b9259f6" />
 
 ---
 
